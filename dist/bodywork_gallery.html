@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animal Rights Activism Photo Gallery</title>
+    <link href="https://fonts.cdnfonts.com/css/code-new-roman-2" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <h1>Bodywork Image Gallery</h1>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="/dist/img/Activsm_Img/img1.jpeg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+
+        <img src="/dist/img/bodywork_Img/chair1.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/chair2.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/chair3.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/testimony1.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/studio1.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/studio2.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/testimony2.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/studio4.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/massage1.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/testimony3.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/massage2.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/bodywork_Img/massage3.jpeg" onclick="openFullImg(this.src)">
+
+
+
+    </div>
+
+    <script>
+
+        let fullImgBox = document.getElementById('fullImgBox');
+        let fullImg = document.getElementById('fullImg');
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animal Rights Activism Photo Gallery</title>
+    <link href="https://fonts.cdnfonts.com/css/code-new-roman-2" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <h1>Animal Rights Activism</h1>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="/dist/img/Activsm_Img/img1.jpeg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+
+        <img src="/dist/img/Activsm_Img/img1.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img2.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img3.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img4.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img5.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img6.jpeg"  onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img7.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img8.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img9.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img10.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img11.jpeg" onclick="openFullImg(this.src)">
+        <img src="/dist/img/Activsm_Img/img12.jpeg" onclick="openFullImg(this.src)">
+
+    </div>
+
+    <script>
+
+        let fullImgBox = document.getElementById('fullImgBox');
+        let fullImg = document.getElementById('fullImg');
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+
+    </script>
+</body>
+</html>

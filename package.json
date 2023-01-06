@@ -1,0 +1,18 @@
+{
+  "name": "benjahmin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "benjahmin",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "node-sass": "^8.0.0"
+  }
+}
