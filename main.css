@@ -270,9 +270,9 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(../dist/img/portrait_small.jpeg);
+      background: url(/dist/img/headshotSm.jpg);
       width: 150px;
-      height: 150px; }
+      height: 170px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -286,6 +286,34 @@ main {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem; }
+      font-size: 5rem;
+    }
+    main .text-secondary {
+      font-size: 5rem;
+    }
+    main span {
+      font-size: 1rem;
+    }
+    main .text-secondary .small{
+      font-size: 1rem;
+    }
+    .boxes .small{
+      font-size: 1rem;
+    }
+    .boxes div {
+      font-size: 1rem;
+      padding: 0.25rem;
+      width: 95%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #home .mobile {
+      font-size: 3.35rem;
+    }
+    main .text-secondary .mobile {
+      font-size: 3rem;
+    }
+
   .projects {
     grid-template-columns: 1fr; } }
